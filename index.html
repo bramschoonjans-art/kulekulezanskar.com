@@ -1,0 +1,1730 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kulé kulé Zanskar — A Guided Himalayan Journey</title>
+  <meta name="description" content="A six-day guided trek through the remote Zanskar Valley, led by local guides from Zangla. Slow travel, small groups, deep silence." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <style>
+    :root{
+      --bg:#f5f5f2;
+      --paper:#ffffff;
+      --ink:#0b1220;
+      --muted:rgba(11,18,32,.72);
+      --line:rgba(11,18,32,.12);
+      --soft:rgba(11,18,32,.06);
+      --radius:18px;
+      --max:1120px;
+
+      --shadow:0 14px 34px rgba(11,18,32,.08);
+      --shadow-soft:0 10px 26px rgba(11,18,32,.06);
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    section{scroll-margin-top:90px}
+
+    .container{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+    /* Skip link (accessibility) */
+    .skip-link{
+      position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;
+    }
+    .skip-link:focus{
+      left:16px;top:16px;width:auto;height:auto;z-index:1000;
+      background:var(--paper);border:1px solid var(--line);
+      padding:10px 12px;border-radius:12px;box-shadow:var(--shadow);
+    }
+
+    /* Header */
+    header{
+      position:sticky;top:0;z-index:50;
+      background:rgba(245,245,242,.88);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line);
+    }
+    .header-inner{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px 0;gap:14px;
+    }
+    .brand{font-weight:750;letter-spacing:-.02em}
+
+    nav{display:none;gap:18px;font-size:14px;color:var(--muted)}
+    nav a{padding:8px 10px;border-radius:999px}
+    nav a:hover{background:rgba(11,18,32,.04);color:rgba(11,18,32,.86)}
+
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:12px 16px;border-radius:999px;
+      border:1px solid var(--line);
+      background:var(--paper);
+      font-weight:650;font-size:14px;
+      white-space:nowrap;
+    }
+    .btn:hover{box-shadow:0 10px 18px rgba(11,18,32,.06)}
+    .btn-primary{
+      background:var(--ink);
+      color:#fff;
+      border-color:rgba(11,18,32,.18);
+    }
+    .btn-primary:hover{box-shadow:0 14px 24px rgba(11,18,32,.14)}
+    .btn-ghost{background:transparent}
+
+    details{position:relative}
+    summary{
+      list-style:none;cursor:pointer;
+      padding:12px 14px;border-radius:999px;
+      border:1px solid var(--line);
+      background:var(--paper);font-weight:650;
+    }
+    summary::-webkit-details-marker{display:none}
+    .menu{
+      position:absolute;right:0;top:52px;width:min(88vw,360px);
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:16px;overflow:hidden;
+      box-shadow:0 18px 40px rgba(11,18,32,.12);
+    }
+    .menu a{
+      display:block;padding:12px 14px;
+      border-top:1px solid var(--soft);
+      color:var(--muted);
+    }
+    .menu a:first-child{border-top:none}
+    .menu a:hover{background:rgba(11,18,32,.03);color:rgba(11,18,32,.86)}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:inherit;
+  min-height:44px;
+}
+
+.brand-logo{
+  height:34px;
+  width:auto;
+  display:block;
+}
+
+.brand-name{
+  font-weight:750;
+  letter-spacing:-.01em;
+  font-size:14.5px;
+}
+
+/* Op mobiel enkel het logo tonen (rustiger) */
+@media (max-width: 720px){
+  .brand{ gap:10px; }
+
+  .brand-mark{
+    width:52px;
+    height:52px;
+    border-radius:16px;
+    background:rgba(255,255,255,.92);
+    border:1px solid rgba(15,23,42,.14);
+    box-shadow:0 14px 32px rgba(0,0,0,.14);
+  }
+
+  .brand-mark svg{
+    width:36px;
+    height:36px;
+  }
+
+  /* Optional: hide text on small screens to keep it clean */
+  .brand-name{ font-size:15px; }
+.brand-sub{ display:none; }
+}
+/* Fix header padding on mobile */
+@media (max-width: 720px){
+  header .container{
+    padding-left:16px;
+    padding-right:16px;
+  }
+}
+
+    /* Sections */
+    .section{padding:56px 0}
+    .alt{
+      background:rgba(255,255,255,.55);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line)
+    }
+    h2{font-size:clamp(1.6rem,3.2vw,2.1rem);letter-spacing:-.02em}
+    .sub{margin-top:10px;color:var(--muted);max-width:75ch}
+
+    .card{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:var(--shadow-soft);
+    }
+    .caption{
+      padding:12px 14px;font-size:12.5px;color:var(--muted);
+      border-top:1px solid var(--soft)
+    }
+
+    .grid-2{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+    .grid-3{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+
+    /* Hero */
+    .hero{
+      position:relative;
+      padding:44px 0;
+      overflow:hidden;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;inset:0;
+      background:url('./images/journey-mood.jpg') center/cover no-repeat;
+      opacity:.09;
+      mix-blend-mode:multiply;
+      pointer-events:none;
+    }
+    .hero > .container{position:relative;z-index:1}
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:22px;
+      align-items:stretch;
+    }
+
+    .hero-copy{
+      background:rgba(255,255,255,.88);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:24px;
+      backdrop-filter:blur(4px);
+      box-shadow:var(--shadow-soft);
+      display:flex;
+      flex-direction:column;
+    }
+
+    .kicker{font-size:13px;font-weight:750;color:var(--muted)}
+    h1{
+      margin-top:10px;
+      font-size:clamp(2rem,5vw,3.1rem);
+      line-height:1.1;
+      letter-spacing:-.03em
+    }
+    .lead{margin-top:14px;color:var(--muted);max-width:70ch}
+    .actions{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+
+    .hero-facts{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:10px;
+    }
+    .fact{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:14px;
+    }
+    .fact small{color:var(--muted)}
+
+    /* Hero media card (equal visual weight + height harmony) */
+    .hero-media{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow-soft);
+      display:flex;
+      flex-direction:column;
+      min-height:320px;
+    }
+    .hero-media img{
+      width:100%;
+      height:100%;
+      min-height:320px;
+      object-fit:cover;
+      object-position:center;
+      filter:contrast(1.03) saturate(.92);
+    }
+
+
+/* Itinerary day image */
+
+/* Editorial day photo: small, calm, inline */
+.day-photo-inline{
+  float:right;
+  width:min(42%, 340px);
+  margin:6px 0 10px 16px;
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.7);
+  box-shadow:0 10px 22px rgba(11,18,32,.06);
+  position:relative;
+}
+
+.day-photo-inline img{
+  width:100%;
+  height:auto;
+  display:block;
+  filter:contrast(.94) saturate(.88) brightness(1.02);
+}
+
+/* Clear float so the card doesn't collapse */
+.day-body::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+/* Mobile: stack it normally */
+@media (max-width: 720px){
+  .day-photo-inline{
+    float:none;
+    width:100%;
+    max-width:520px;
+    margin:14px 0 16px;
+  }
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+  font-size: 11px;
+  color: rgba(255,255,255,.7);
+  text-shadow: 0 1px 3px rgba(0,0,0,.4);
+  pointer-events: none;
+}
+/* subtle copyright */
+.day-image .credit{
+  position:absolute;
+  right:10px;
+  bottom:8px;
+  font-size:12px;
+  color:rgba(255,255,255,.6);
+}
+.day-image-wrap{
+  position:relative;
+}
+
+    /* Why / Included / Safety cards */
+    .info-grid{
+      margin-top:26px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+    .info-card{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px;
+      box-shadow:var(--shadow-soft);
+    }
+    .info-card h3{
+      font-size:1.15rem;
+      letter-spacing:-.01em;
+      margin-bottom:10px;
+    }
+    .info-card p{color:var(--muted);line-height:1.65}
+/* Make one info card span full width */
+.info-card-wide{
+  grid-column: 1 / -1;
+}
+.info-card-wide{
+  background:linear-gradient(180deg,#fff,#fafafa);
+  border:1px dashed var(--line);
+}
+    /* Journey (compact) */
+    .journey-compact{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .journey-copy{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow:var(--shadow-soft);
+    }
+    .journey-copy p{margin-top:12px;color:var(--muted);max-width:75ch}
+    .journey-copy p:first-of-type{margin-top:10px}
+
+    .journey-photo{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow-soft);
+      margin:0;
+      display:flex;
+      flex-direction:column;
+    }
+    .journey-photo img{
+      width:100%;
+      height:100%;
+      max-height:420px;
+      object-fit:cover;
+    }
+    .journey-photo figcaption{
+      padding:10px 12px;
+      font-size:12px;
+      color:var(--muted);
+      border-top:1px solid var(--soft);
+    }
+
+    /* Itinerary (no vertical line) */
+    .timeline{margin-top:26px;display:grid;gap:16px}
+    .day-item{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:var(--shadow-soft);
+    }
+    .day-head{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start}
+    .day-badge{
+      width:44px;height:44px;border-radius:14px;
+      display:flex;align-items:center;justify-content:center;
+      background:rgba(11,18,32,.04);
+      border:1px solid var(--line);
+      color:var(--ink);
+    }
+    .ico{width:20px;height:20px;display:block}
+    .day-title{display:flex;flex-direction:column;gap:4px}
+    .day-title .num{font-size:12.5px;font-weight:850;letter-spacing:.08em;color:rgba(11,18,32,.58)}
+    .day-title h3{font-size:1.12rem;letter-spacing:-.01em;line-height:1.25}
+    .day-route{font-size:13.5px;color:var(--muted)}
+    .day-body{margin-top:12px;color:var(--muted)}
+    .day-body p{margin-top:10px}
+    .day-body p:first-child{margin-top:0}
+    .day-tagline{margin-top:12px;font-size:13px;color:rgba(11,18,32,.66);font-style:italic}
+    .day-actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+
+    /* Packing list */
+    .packing-grid{
+      margin-top:26px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+    .packing-card{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px;
+      box-shadow:var(--shadow-soft);
+    }
+    .packing-card h3{font-size:1.15rem;letter-spacing:-.01em;margin-bottom:12px}
+    .packing-list{margin:0;padding-left:18px;color:var(--muted);line-height:1.7}
+    .packing-list li{margin:6px 0}
+    .note{
+      margin-top:18px;
+      background:rgba(255,255,255,.75);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      box-shadow:var(--shadow-soft);
+    }
+    .note span{color:var(--muted)}
+/* Optional transport – full-width highlight */
+.included-transport{
+  margin-top:32px;
+  padding:22px 24px;
+  background:rgba(245, 235, 215, .6); /* optie A */
+  border:1px solid rgba(160, 120, 60, .25);
+  border-radius:var(--radius);
+}
+
+.included-transport h3{
+  margin-bottom:8px;
+  font-weight:700;
+}
+
+.included-transport p{
+  max-width:80ch;
+}
+    /* Pricing */
+    .pricing-tiers{
+      margin-top:28px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
+    }
+    .price-card{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:26px 24px;
+      text-align:left;
+      box-shadow:var(--shadow-soft);
+    }
+    .price-card.highlight{
+      background:linear-gradient(180deg, rgba(11,18,32,.04), rgba(11,18,32,.02));
+    }
+    .price-group{font-size:15px;color:var(--muted);margin-bottom:6px}
+    .price-amount{font-size:2.4rem;font-weight:800;letter-spacing:-.02em}
+    .price-unit{margin-top:2px;color:var(--muted)}
+    .pricing-details{
+      margin-top:26px;
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px;
+      box-shadow:var(--shadow-soft);
+    }
+    .pricing-details h3{font-size:1.05rem;margin-bottom:12px}
+    .pricing-details ul{padding-left:18px;color:var(--muted)}
+    .pricing-details li{margin-bottom:8px}
+.pricing-transport{
+  background:rgba(245, 235, 215, .6);
+  border:1px solid rgba(160, 120, 60, .25);
+}
+    C/* =========================
+   Sticky WhatsApp (mobile only)
+========================= */
+/* Sticky WhatsApp: show only on touch devices (phones/tablets) */
+@media (hover: none) and (pointer: coarse){
+  body{ padding-bottom:84px; }
+  .wa-sticky{ display:block; }
+}
+
+/* Hide on desktop/laptops explicitly */
+@media (hover: hover) and (pointer: fine){
+  body{ padding-bottom:0; }
+  .wa-sticky{ display:none; }
+}
+.wa-sticky{
+  position:fixed;
+  left:16px;
+  right:16px;
+  bottom:14px;
+  z-index:999;
+  display:none;
+}
+
+.wa-sticky a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:14px 16px;
+  border-radius:999px;
+  background:rgba(11,18,32,.92);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 16px 34px rgba(0,0,0,.28);
+  font-weight:650;
+  backdrop-filter:blur(10px);
+}
+
+/* Give the page breathing room so the sticky button doesn't cover content */
+@media (max-width: 720px){
+  body{ padding-bottom:84px; }
+  .wa-sticky{ display:block; }
+}
+
+/* =========================
+   Contact (blends into footer)
+========================= */
+.section-contact{
+  background:linear-gradient(180deg,#0b1220 0%,#0b1220 70%,#060a12 100%);
+  color:#fff;
+  text-align:center;
+  padding-bottom:80px;
+  border-top:none;
+}
+
+.section-contact .sub{
+  margin-top:12px;
+  color:rgba(255,255,255,.65);
+  text-align:center;
+}
+
+.contact-lead{
+  margin:22px auto 0;
+  max-width:44ch;
+  font-size:1.05rem;
+  font-weight:500;
+  text-align:center;
+  color:rgba(255,255,255,.9);
+}
+
+.contact-cta{
+  margin-top:36px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+
+.contact-alt{
+  font-size:13px;
+  color:rgba(255,255,255,.75);
+}
+
+.contact-alt a{
+  color:#ffffff;
+  font-weight:600;
+  text-decoration:underline;
+}
+
+.contact-alt a:hover{
+  text-decoration:none;
+}
+.btn-whatsapp{
+  background:#ffffff;
+  color:#0b1220;
+  border:1px solid rgba(11,18,32,.12);
+  font-size:15px;
+  padding:16px 26px;
+  letter-spacing:.01em;
+  box-shadow:0 18px 38px rgba(0,0,0,.35);
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+@media (hover:hover){
+  .btn-whatsapp:hover{
+    transform:translateY(-1px);
+    background:#f2f2f2;
+  }
+}
+
+.btn-whatsapp:focus-visible{
+  outline:2px solid rgba(255,255,255,.7);
+  outline-offset:4px;
+}
+
+.cta-hint{
+  font-size:12.5px;
+  color:rgba(255,255,255,.65);
+}
+
+.contact-note{
+  margin-top:26px;
+  font-size:13px;
+  color:rgba(255,255,255,.6);
+}
+
+@media (max-width: 720px){
+  .section-contact{ padding-bottom:110px; }
+}
+
+.wa-sticky{ display:none; }
+
+@media (max-width: 720px){
+  .wa-sticky{
+    position:fixed;
+    left:16px;
+    right:16px;
+    bottom:14px;
+    z-index:999;
+    display:block;
+  }
+}
+.site-footer{
+  padding-bottom:40px;
+}
+
+@media (max-width: 720px){
+  .site-footer{ padding-bottom:90px; }
+}
+/* =========================
+   FAQ (non-collapsible)
+========================= */
+.faq-list{
+  margin-top:22px;
+  display:grid;
+  gap:12px;
+}
+
+.faq-item{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:16px 16px 14px;
+}
+
+.faq-item h3{
+  font-size:1.02rem;
+  letter-spacing:-.01em;
+  line-height:1.25;
+  margin-bottom:8px;
+}
+
+.faq-item p{
+  color:var(--muted);
+}
+
+@media(min-width:860px){
+  .faq-list{ grid-template-columns:1fr 1fr; }
+}
+
+/* =========================
+   Footer
+========================= */
+.site-footer{
+  background:#060a12;
+  color:rgba(255,255,255,.65);
+  padding:28px 0;
+  font-size:12px;
+  line-height:1.55;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.site-footer .container{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.copyright-main{
+  font-weight:600;
+  color:rgba(255,255,255,.82);
+}
+
+.copyright-sub{
+  max-width:85ch;
+  opacity:.78;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media(min-width:720px){
+  .hero-facts{grid-template-columns:repeat(3,1fr)}
+  .grid-2{grid-template-columns:repeat(2,1fr)}
+  .grid-3{grid-template-columns:repeat(3,1fr)}
+  .info-grid{grid-template-columns:repeat(3,1fr)}
+  .packing-grid{grid-template-columns:repeat(3,1fr)}
+  .pricing-tiers{grid-template-columns:repeat(3,1fr)}
+}
+
+@media(min-width:900px){
+  .journey-compact{grid-template-columns:1.15fr .85fr}
+}
+
+@media(min-width:1024px){
+  nav{display:flex;flex-wrap:wrap;row-gap:6px}
+  details{display:none}
+  .hero-grid{grid-template-columns:1.18fr .82fr}
+  .hero-media img{min-height:420px}
+}
+/* Brand (symbol + wordmark) */
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  color:var(--ink);
+}
+
+.brand-mark{
+  width:44px;
+  height:44px;
+  border-radius:14px;
+  display:grid;
+  place-items:center;
+  background:rgba(255,255,255,.72);
+  border:1px solid rgba(15,23,42,.10);
+  box-shadow:0 10px 24px rgba(0,0,0,.10);
+  backdrop-filter:blur(10px);
+  color:rgba(15,23,42,.88);
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+.brand-mark svg{
+  width:30px;
+  height:30px;
+}
+
+.brand-text{
+  display:flex;
+  flex-direction:column;
+  line-height:1.05;
+}
+
+.brand-name{
+  font-weight:780;
+  letter-spacing:-.02em;
+  font-size:16px;
+}
+
+.brand-sub{
+  font-weight:650;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-size:11px;
+  color:rgba(15,23,42,.62);
+  margin-top:2px;
+}
+
+/* subtle interaction */
+.brand:hover .brand-mark{ transform:translateY(-1px); }
+.brand:focus-visible{
+  outline:2px solid rgba(15,23,42,.22);
+  outline-offset:4px;
+  border-radius:16px;
+}
+
+/* Dark header (only if you ever add header.is-dark) */
+header.is-dark .brand{ color:#fff; }
+header.is-dark .brand-mark{ color:#fff; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); }
+header.is-dark .brand-sub{ color:rgba(255,255,255,.72); }
+
+/* Header layout */
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(245,245,242,.88);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:14px 0;
+}
+
+nav{
+  display:none;
+  gap:18px;
+  font-size:14px;
+  color:var(--muted);
+  align-items:center;
+  flex-wrap:wrap;
+  row-gap:6px;
+}
+
+/* mobile tightening */
+@media (max-width: 720px){
+  .brand-sub{ display:none; }
+}
+
+/* desktop nav on */
+@media(min-width:1024px){
+  nav{display:flex;}
+  details{display:none;}
+}
+  </style>
+</head>
+
+<body>
+<div id="top"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="container header-inner">
+
+    <a class="brand" href="#top" aria-label="Kulé kulé Zanskar — home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" role="img" focusable="false">
+          <path d="M10 26 C22 18, 42 18, 54 26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M18 26 L14 34 L22 34 Z" fill="currentColor" opacity=".95"/>
+          <path d="M30 24 L26 32 L34 32 Z" fill="currentColor" opacity=".75"/>
+          <path d="M42 26 L38 34 L46 34 Z" fill="currentColor" opacity=".55"/>
+          <path d="M12 46 L26 30 L36 44 L44 36 L52 46" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M16 50 C24 48, 30 52, 38 50 C46 48, 50 52, 54 50" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".9"/>
+        </svg>
+      </span>
+
+      <span class="brand-text">
+        <span class="brand-name">Kulé kulé</span>
+        <span class="brand-sub">Zanskar</span>
+      </span>
+    </a>
+
+    <nav aria-label="Primary">
+      <a href="#journey">Journey</a>
+      <a href="#itinerary">Itinerary</a>
+      <a href="#why">Why with us</a>
+      <a href="#included">What’s included</a>
+      <a href="#packing">Packing list</a>
+      <a href="#safety">Safety</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <details id="mobile-menu">
+      <summary>Menu</summary>
+      <div class="menu" aria-label="Mobile navigation">
+        <a href="#journey">Journey</a>
+        <a href="#itinerary">Itinerary</a>
+        <a href="#why">Why with us</a>
+        <a href="#included">What’s included</a>
+        <a href="#packing">Packing list</a>
+        <a href="#safety">Safety</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </details>
+
+  </div>
+</header>
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Introduction">
+    <div class="container hero-grid">
+
+      <div class="hero-copy">
+        <div class="kicker">Juley! Welcome to Zanskar</div>
+        <h1>A slow Himalayan journey, guided from Zangla to Phuktal.</h1>
+
+        <p class="lead">
+          We are <b>Stanzin Chotak</b> and <b>Stanzin Lhamath</b> — childhood friends and experienced trekking guides,
+  born and raised in Zangla, in the heart of Zanskar, Ladakh. We walk this land as we always have,
+  with patience and deep local knowledge.
+  <br><br>
+  We guide you <strong><i>kulé kulé</i></strong> — slow and steady — through quiet valleys where space opens, silence deepens,
+  and nature sets the rhythm. This is a journey to be felt, one day at a time, all the way to the stillness of Phuktal.
+</p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#contact">Request availability</a>
+          <a class="btn" href="#itinerary">See itinerary</a>
+        </div>
+
+        <div class="hero-facts" aria-label="Trip highlights">
+          <div class="fact"><b>Small groups</b><br><small>From 2 participants</small></div>
+          <div class="fact"><b>High altitude</b><br><small>Remote trekking, 4,000–5,000 m</small></div>
+          <div class="fact"><b>Truly offline</b><br><small>No signal or Wi-Fi</small></div>
+        </div>
+      </div>
+
+      <aside class="hero-media" aria-label="Hero photo">
+        <img src="./images/hero-portrait.jpg" alt="Prayer flags on the Zanskar trail" loading="eager" />
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+<section id="journey" class="section" aria-label="The Journey">
+  <div class="container">
+    <div class="journey-compact">
+
+      <!-- Figure now on the left -->
+      <figure class="journey-photo">
+        <img
+          src="./images/journey-monastery-warm.jpg"
+          alt="Monastery in Zanskar in warm adventurous light"
+          loading="lazy"
+        >
+      </figure>
+
+      <div class="journey-copy">
+        <h2>The Journey</h2>
+        <p>
+          This six-day trek unfolds slowly, following ancient paths through the heart of <strong>Zanskar</strong>.
+Starting in the village of <strong>Zangla</strong>, the journey leads across wide valleys, high passes
+and remote river systems — gradually drawing you deeper into <strong>silence and scale</strong>.
+        </p>
+        <p>
+         Walking <strong><i>kulé kulé</i></strong> — slow and steady — gives the landscape time to reveal itself:
+changing light, shifting terrain, wildlife signs, and the quiet rhythm of camp life.
+The journey culminates at <strong>Phuktal Monastery</strong>, one of the most isolated spiritual sites
+in the Himalayas, reached on foot after days of immersion in the mountains.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ITINERARY -->
+  <section id="itinerary" class="section alt" aria-label="Itinerary">
+    <div class="container">
+      <h2>Itinerary</h2>
+      <p class="sub">Read the trek as a continuous story — day by day. The route may shift slightly with weather, river conditions and group pace.</p>
+
+      <div class="timeline" aria-label="Six-day itinerary">
+
+<!-- DAY 1 -->
+ <article class="day-item">
+  <div class="day-head">
+    <div class="day-badge" aria-hidden="true">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 19l7-12 4 7 2-3 5 8H3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M10 7l1.8 3.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="day-title">
+      <div class="num">DAY 1</div>
+      <h3>Zangla → Sumdo</h3>
+      <div class="day-route">Historic views • moon landscapes • river crossings</div>
+    </div>
+  </div>
+
+  <div class="day-body">
+
+    <!-- Discreet inline photo -->
+    <figure class="day-photo-inline">
+      <img
+        src="./images/itinerary/day-1.jpg"
+        alt="View over the Zanskar valley on the first day of the trek"
+        loading="lazy"
+        decoding="async"
+      >
+    </figure>
+
+    <p>
+      Leaving the village of Zangla, the trail immediately climbs toward the old king’s palace.
+      From here, the valley opens beneath you, offering a first wide view over the village,
+      the river and the mountains ahead.
+    </p>
+
+    <p>
+      Beyond the palace, pale, eroded slopes form vast “moon landscapes.”
+      The path follows the river, crossing it multiple times and passing clear springs
+      that emerge from the valley walls.
+    </p>
+
+    <p>
+      Camp is set beside the river — the first night under canvas,
+      with open space and flowing water as the soundtrack.
+    </p>
+
+    <div class="day-tagline">
+      Historic views, lunar landscapes and a first immersion into the Zanskar valleys.
+    </div>
+  </div>
+
+  <div class="day-actions">
+    <a class="btn btn-ghost" href="./routes/day-1.gpx">Download GPX</a>
+  </div>
+</article>
+
+<!-- DAY TWO -->
+
+   <article class="day-item">
+  <div class="day-head">
+    <div class="day-badge" aria-hidden="true">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 7c2.2 0 2.2 2 4.4 2s2.2-2 4.4-2 2.2 2 4.4 2S20.4 7 22.6 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M4 12c2.2 0 2.2 2 4.4 2s2.2-2 4.4-2 2.2 2 4.4 2 2.2-2 4.4-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M4 17c2.2 0 2.2 2 4.4 2s2.2-2 4.4-2 2.2 2 4.4 2 2.2-2 4.4-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="day-title">
+      <div class="num">DAY 2</div>
+      <h3>Sumdo → Kong Lumche</h3>
+      <div class="day-route">Open valleys • wildlife • sources of the Zanskar River</div>
+    </div>
+  </div>
+
+  <div class="day-body">
+
+    <!-- Discreet inline photo -->
+    <figure class="day-photo-inline">
+      <img
+        src="./images/itinerary/day-2.jpg"
+        alt="Pack animals on a narrow trail in the Zanskar valley"
+        loading="lazy"
+        decoding="async"
+      >
+    </figure>
+
+    <p>
+      The valley opens wider today, revealing long views toward distant ridgelines and rugged peaks.
+      The walking stays steady and relaxed — ideal for settling into the rhythm of the trek.
+    </p>
+
+    <p>
+      Yaks graze on open plains, mountain goats move effortlessly along steep slopes, and with some luck
+      you may notice subtle signs of rarer wildlife. This is snow leopard territory: silent, remote and wild.
+    </p>
+
+    <p>
+      Camp is reached near the river at Kong Lumche, with a snow-capped table mountain glowing softly on the horizon
+      as the light fades.
+    </p>
+
+    <div class="day-tagline">
+      Wide valleys, wildlife encounters and the first waters of the Zanskar River.
+    </div>
+  </div>
+
+  <div class="day-actions">
+    <a class="btn btn-ghost" href="./routes/day-2.gpx">Download GPX</a>
+  </div>
+</article>
+
+<!-- DAY THREE -->
+
+       <article class="day-item">
+  <div class="day-head">
+    <div class="day-badge" aria-hidden="true">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 19l6-10 2 3 2-3 6 10H4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M12 6v7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M10.2 7.8L12 6l1.8 1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="day-title">
+      <div class="num">DAY 3</div>
+      <h3>Kong Lumche → Yarumchun (via high pass)</h3>
+      <div class="day-route">High altitude • alpine plains • glacial river camp</div>
+    </div>
+  </div>
+
+  <div class="day-body">
+
+    <!-- Discreet inline photo -->
+    <figure class="day-photo-inline">
+      <img
+        src="./images/itinerary/day-3.jpg"
+        alt="High mountain pass with prayer flags and wide Himalayan views"
+        loading="lazy"
+        decoding="async"
+      >
+    </figure>
+
+    <p>
+      A true climbing day. The ascent moves steadily toward a high pass around 5,100 meters — and then,
+      unexpectedly, the terrain opens into green alpine plains dotted with hardy herbs and small flowers.
+    </p>
+
+    <p>
+      Marmots whistle across the grasslands while eagles circle high above. At the pass, silence feels complete:
+      no roads, no villages — only open space in every direction.
+    </p>
+
+    <p>
+      The descent leads to a remote campsite beside a glacial river around 4,800 meters.
+      For the brave: a quick, ice-cold dip you’ll never forget.
+    </p>
+
+    <div class="day-tagline">
+      A high pass, alpine plains and one of the most remote camps of the trek.
+    </div>
+  </div>
+
+  <div class="day-actions">
+    <a class="btn btn-ghost" href="./routes/day-3.gpx">Download GPX</a>
+  </div>
+</article>
+
+<!-- DAY FOUR -->
+
+        <article class="day-item">
+  <div class="day-head">
+    <div class="day-badge" aria-hidden="true">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 18c4-8 6-8 9-2 3-6 5-6 9 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5 9c2-1 4-1 6 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="day-title">
+      <div class="num">DAY 4</div>
+      <h3>Yarumchun → Lar La</h3>
+      <div class="day-route">Wide river valley • cinematic rocks • canyon views</div>
+    </div>
+  </div>
+
+  <div class="day-body">
+
+    <!-- Discreet inline photo -->
+    <figure class="day-photo-inline">
+      <img
+        src="./images/itinerary/day-4.jpg"
+        alt="Stone cairn beside a winding river in a wide Zanskar valley"
+        loading="lazy"
+        decoding="async"
+      >
+    </figure>
+
+    <p>
+      After the intensity of the previous days, the pace eases.
+      The trail follows a wide river valley — a day to talk, reflect and simply walk.
+    </p>
+
+    <p>
+      Rock formations rise on all sides, sculpted into cinematic shapes.
+      At times, the route leads directly through the river, blurring the line between path and water.
+    </p>
+
+    <p>
+      A steep shortcut climbs through green mountain vegetation to a viewpoint where the river
+      disappears into a canyon, only to reappear downstream as the trail descends toward camp.
+    </p>
+
+    <div class="day-tagline">
+      A relaxed valley walk with cinematic rock formations and shifting perspectives.
+    </div>
+  </div>
+
+  <div class="day-actions">
+    <a class="btn btn-ghost" href="./routes/day-4.gpx">Download GPX</a>
+  </div>
+</article>
+
+
+<!-- DAY FIVE -->
+
+        <article class="day-item">
+  <div class="day-head">
+    <div class="day-badge" aria-hidden="true">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 19l5-7 3 4 3-6 7 9H3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M9 12l2-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="day-title">
+      <div class="num">DAY 5</div>
+      <h3>Lar La → Shadey</h3>
+      <div class="day-route">Two passes • dramatic flanks • stupa arrival</div>
+    </div>
+  </div>
+
+  <div class="day-body">
+
+    <!-- Discreet inline photo -->
+    <figure class="day-photo-inline">
+      <img
+        src="./images/itinerary/day-5.jpg"
+        alt="Mountain trail with stupa and dramatic clouds on the fifth day of the trek"
+        loading="lazy"
+        decoding="async"
+      >
+    </figure>
+
+    <p>
+      A steep climb sets the tone for the day — by now your legs move with confidence,
+      and the rhythm of the mountains feels familiar. The first pass opens wide views
+      across layered ridges and distant valleys.
+    </p>
+
+    <p>
+      A long traverse follows along a dramatic mountain flank, where shifting cloud
+      shadows play across the slopes. The second pass marks the final effort before
+      a gentle descent through an open, grassy field.
+    </p>
+
+    <p>
+      As a solitary stupa comes into view, the presence of Shadey feels near —
+      a quiet, almost ceremonial arrival after days of high passes and open terrain.
+    </p>
+
+    <div class="day-tagline">
+      Two passes, shifting mountain light and a calm return toward settlement.
+    </div>
+  </div>
+
+  <div class="day-actions">
+    <a class="btn btn-ghost" href="./routes/day-5.gpx">Download GPX</a>
+  </div>
+</article>
+
+
+<!-- DAY SIX -->
+
+     <article class="day-item">
+  <div class="day-head">
+    <div class="day-badge" aria-hidden="true">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 10h12v9H6v-9Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M4 10l8-5 8 5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M9 19v-4h6v4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="day-title">
+      <div class="num">DAY 6</div>
+      <h3>Shadey → Phuktal Monastery</h3>
+      <div class="day-route">Hanging bridges • surreal terrain • cave monastery finale</div>
+    </div>
+  </div>
+
+  <div class="day-body">
+
+    <!-- Discreet inline photo -->
+    <figure class="day-photo-inline">
+      <img
+        src="./images/itinerary/day-6.jpg"
+        alt="Phuktal Monastery built into a cliff above the river in Zanskar"
+        loading="lazy"
+        decoding="async"
+      >
+    </figure>
+
+    <p>
+      Start early. It’s a long day, but mostly downhill — the body moves easily now,
+      shaped by altitude and rhythm.
+    </p>
+
+    <p>
+      The trail crosses hanging bridges and passes old monasteries clinging to the rock.
+      The landscape grows sharper and more surreal with every bend of the path.
+    </p>
+
+    <p>
+      Then Phuktal appears — built into a cave above the river, inseparable from the cliff itself.
+      Reaching it on foot, after six days of silence and effort, gives the arrival a rare depth.
+      The night is spent in a local homestay, where the journey gently comes to rest.
+    </p>
+
+    <div class="day-tagline">
+      A long descent and the unforgettable arrival at Phuktal Monastery.
+    </div>
+  </div>
+
+  <div class="day-actions">
+    <a class="btn btn-ghost" href="./routes/day-6.gpx">Download GPX</a>
+  </div>
+</article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY WITH US -->
+  <section id="why" class="section" aria-label="Why trek with us">
+    <div class="container">
+      <h2>Why trek with us?</h2>
+      <p class="sub">You book directly with the guides. Our entire team comes from the region, and <b>your trip supports the local community</b>.</p>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Direct &amp; transparent</h3>
+          <p>No agencies or middlemen — you communicate with us directly and we organize everything from A to Z.</p>
+        </div>
+        <div class="info-card">
+          <h3>100% local team</h3>
+          <p>Guide, cook, horseman and pack horses. Luggage carried up to <strong>20&nbsp;kg per person</strong>.</p>
+        </div>
+        <div class="info-card">
+          <h3>Remote routes</h3>
+          <p>Quiet valleys, dramatic passes and untouched landscapes — far beyond the classic trekking paths.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INCLUDED -->
+<section id="included" class="section alt" aria-label="What's included">
+  <div class="container">
+    <h2>What’s included</h2>
+    <p class="sub">
+      From the moment you arrive in Zanskar until the end of the trek, everything essential is taken care of —
+      so you can focus fully on the journey.
+    </p>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Local guiding &amp; crew</h3>
+        <p>Experienced local guides, cook, horseman and pack horses — a full team from the region.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Accommodation &amp; camping</h3>
+        <p>All camping equipment during the trek, plus a homestay near Phuktal Monastery.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>All meals during the trek</h3>
+        <p>Freshly prepared breakfast, lunch and dinner each day.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Luggage transport</h3>
+        <p>Pack horses carry your main luggage (up to <strong>20&nbsp;kg per person</strong>).</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Permits &amp; logistics</h3>
+        <p>All required permits, route planning and daily logistics handled by us.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Safety &amp; support</h3>
+        <p>First-aid equipment and continuous attention to acclimatisation and wellbeing.</p>
+      </div>
+    </div>
+
+    <!-- Full-width optional transport block -->
+    <div class="included-transport">
+      <h3>Optional transport from Leh (strongly recommended)</h3>
+      <p>
+        Transport to and from the trek is <strong>not included by default</strong>, but we strongly recommend arranging it through us
+        for a smooth and stress-free experience.
+      </p>
+      <p>
+        We can organise transport fully tailored to your itinerary: airport pick-up in Leh, hotel accommodation
+        for acclimatisation, the drive from Leh to Zangla, and return transport from Phuktal back to Leh —
+        including hotel or airport drop-off.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- PACKING -->
+  <section id="packing" class="section" aria-label="Packing list">
+    <div class="container">
+      <h2>Packing list (must-haves)</h2>
+      <p class="sub">
+        Zanskar is remote, high-altitude and unpredictable. These essentials keep you warm, safe and comfortable.
+        Pack light — your main bag goes on pack horses (up to <strong>20&nbsp;kg per person</strong>), and you hike with a daypack.
+      </p>
+
+      <div class="packing-grid">
+        <div class="packing-card">
+          <h3>Footwear</h3>
+          <ul class="packing-list">
+            <li>Broken-in trekking boots (ankle support)</li>
+            <li>Camp shoes / sandals</li>
+            <li>Warm socks (3–5 pairs, incl. 1–2 thick pairs)</li>
+            <li>Blister care (Compeed / tape) — essential</li>
+          </ul>
+        </div>
+
+        <div class="packing-card">
+          <h3>Clothing layers</h3>
+          <ul class="packing-list">
+            <li>Base layers (2 sets: merino or synthetic)</li>
+            <li>Warm mid layer (fleece or light down)</li>
+            <li>Insulated jacket (down or synthetic)</li>
+            <li>Shell jacket (wind &amp; rain protection)</li>
+            <li>Trekking pants (1–2) + warm layer (leggings / thermal)</li>
+            <li>Warm hat + sun hat / cap</li>
+            <li>Gloves (thin + warm pair)</li>
+          </ul>
+        </div>
+
+        <div class="packing-card">
+          <h3>Sleeping &amp; warmth</h3>
+          <ul class="packing-list">
+            <li>Warm sleeping bag (comfort around <strong>-10°C</strong> recommended)</li>
+            <li>Sleeping liner (optional)</li>
+            <li>Headlamp + spare batteries</li>
+            <li>Earplugs (wind &amp; river can be loud)</li>
+          </ul>
+        </div>
+
+        <div class="packing-card">
+          <h3>Daypack essentials</h3>
+          <ul class="packing-list">
+            <li>Daypack (20–30L)</li>
+            <li>Water bottles (min. 1.5–2L total)</li>
+            <li>Water purification (tabs or filter)</li>
+            <li>Sun protection: sunscreen, lip balm (SPF), sunglasses</li>
+            <li>Rain cover / dry bag for electronics</li>
+          </ul>
+        </div>
+
+        <div class="packing-card">
+          <h3>Health &amp; personal</h3>
+          <ul class="packing-list">
+            <li>Personal meds + small first-aid kit</li>
+            <li>Altitude medication (only if advised by your doctor)</li>
+            <li>Wet wipes, hand sanitizer</li>
+            <li>Quick-dry towel</li>
+            <li>Travel insurance details</li>
+          </ul>
+        </div>
+
+        <div class="packing-card">
+          <h3>Nice-to-have</h3>
+          <ul class="packing-list">
+            <li>Trekking poles (descents &amp; river crossings)</li>
+            <li>Power bank (no electricity in camp)</li>
+            <li>Camera / phone + extra storage</li>
+            <li>Light book / journal</li>
+            <li>Small gifts for homestays (optional)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="note">
+        <b>Tip:</b>
+        <span>
+          Pack for <b>cold nights</b> and <b>strong sun</b>. Weather can switch quickly — layers are the key.
+          If you want, we can do a quick gear check based on what you already own.
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAFETY -->
+  <section id="safety" class="section alt" aria-label="Safety">
+    <div class="container">
+      <h2>Safety</h2>
+      <p class="sub">
+        Zanskar is remote and high-altitude. We keep the pace steady, monitor acclimatization, and adapt the plan when conditions change.
+        Your safety is our priority — always.
+      </p>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Acclimatization &amp; pacing</h3>
+          <p>We guide <em>kulé kulé</em> — slow and steady — with regular breaks, hydration reminders and a pace that supports safe altitude adaptation.</p>
+        </div>
+        <div class="info-card">
+          <h3>Route flexibility</h3>
+          <p>Weather, river levels and trail conditions can change quickly. We may adjust route, timing or campsite locations to keep the trek safe and comfortable.</p>
+        </div>
+        <div class="info-card">
+          <h3>Remote-area preparedness</h3>
+          <p>There is no signal or Wi-Fi on most of the trek. Our team knows exit routes and responds calmly to changing conditions.</p>
+        </div>
+      </div>
+
+      <div class="note">
+        <b>Important:</b>
+        <span>Travel insurance that covers high-altitude trekking is strongly recommended. We’ll share practical guidance before departure.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section" aria-label="Pricing">
+    <div class="container">
+      <h2>Pricing</h2>
+      <p class="sub">Fair and transparent pricing for small groups.</p>
+
+      <div class="pricing-tiers">
+        <div class="price-card">
+          <div class="price-group">2–3 people</div>
+          <div class="price-amount">€1500</div>
+          <div class="price-unit">per person</div>
+        </div>
+
+        <div class="price-card highlight">
+          <div class="price-group">4–6 people</div>
+          <div class="price-amount">€1250</div>
+          <div class="price-unit">per person</div>
+        </div>
+
+        <div class="price-card">
+          <div class="price-group">7–10 people</div>
+          <div class="price-amount">€1000</div>
+          <div class="price-unit">per person</div>
+        </div>
+      </div>
+
+      <div class="pricing-details">
+        <h3>Booking &amp; payment</h3>
+        <ul>
+          <li>Flight ticket to Leh required for confirmation</li>
+          <li>50% payment: 30 days before departure</li>
+          <li>50% payment: upon arrival</li>
+        </ul>
+      </div>
+     <div class="pricing-details pricing-transport">
+  <h3>Transport from Leh (optional, strongly recommended)</h3>
+  <ul>
+    <li>Transport to/from the trek is <strong>not included by default</strong>, but can be arranged on request.</li>
+    <li>We can organise airport pick-up in Leh, hotel stay for acclimatisation, the drive to Zangla, and return from Phuktal to Leh.</li>
+    <li>Pricing depends on your dates, group size and logistics — we’ll confirm a clear quote in advance.</li>
+  </ul>
+</div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+<section id="faq" class="section alt" aria-label="Frequently asked questions">
+  <div class="container">
+    <h2>FAQ</h2>
+    <p class="sub">Short, clear answers — if you’re unsure about anything, just message us.</p>
+
+    <div class="faq-list">
+      <article class="faq-item">
+        <h3>How fit do I need to be?</h3>
+        <p>You should be comfortable walking several hours a day for six consecutive days. Endurance matters more than speed — we walk <i>kulé kulé</i>.</p>
+      </article>
+
+      <article class="faq-item">
+        <h3>Do I need high-altitude experience?</h3>
+        <p>Not necessarily, but it helps. Most days are between 4,000–5,000 m, so we go slowly and watch acclimatisation closely.</p>
+      </article>
+
+      <article class="faq-item">
+        <h3>What’s the best season?</h3>
+        <p>Zanskar is highly seasonal. We run treks during the summer trekking window when passes and rivers are manageable — ask us for the best dates this year.</p>
+      </article>
+
+      <article class="faq-item">
+        <h3>Is there phone signal or Wi-Fi?</h3>
+        <p>No. This is truly offline trekking — part of the experience is silence, presence and uninterrupted mountain time.</p>
+      </article>
+
+      <article class="faq-item">
+        <h3>What are nights like?</h3>
+        <p>Cold at altitude, even in summer. Bring warm layers and a proper sleeping bag — we’ll advise the right rating for your dates.</p>
+      </article>
+
+      <article class="faq-item">
+        <h3>Who carries the luggage?</h3>
+        <p>Pack animals carry your main bag. You walk with a light daypack (water, layers, snacks, camera).</p>
+      </article>
+
+      <article class="faq-item">
+        <h3>What if weather changes the route?</h3>
+        <p>Flexibility is safety. We may adapt stages based on weather, river levels and group condition, while keeping the journey’s spirit and destination.</p>
+      </article>
+      
+      <article class="faq-item">
+  		<h3>Is transport from and to Leh included?</h3>
+  		<p>Transport in Ladakh can be arranged for you upon request. This includes airport transfers, acclimatisation logistics, the drive to Zangla, and the return from Phuktal to Leh after the trek.</p>
+		</article>
+
+      <article class="faq-item">
+        <h3>How do we book?</h3>
+        <p>Send your preferred dates, group size and trekking experience. We’ll reply with availability, pricing and practical next steps.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+  <!-- CONTACT -->
+<section id="contact" class="section section-contact" aria-label="Contact">
+  <div class="container">
+    <h2>Contact</h2>
+
+    <p class="contact-lead">
+      If this journey resonates with you, the next step is simple.
+    </p>
+
+ <div class="contact-cta">
+  <a
+    class="btn btn-primary btn-whatsapp"
+    href="https://wa.me/919484362470?text=Hello%20Stanzin%2C%20I%20am%20interested%20in%20the%20Kule%20Kule%20Zanskar%20six-day%20trek."
+    target="_blank"
+    rel="noopener noreferrer">
+    Start a WhatsApp conversation
+  </a>
+
+  <div class="contact-alt">
+    You can also contact us via:
+    <a
+      href="https://wa.me/919469588242"
+      target="_blank"
+      rel="noopener noreferrer">
+      +91&nbsp;94695&nbsp;88242
+    </a>
+  </div>
+
+  <span class="cta-hint">Personal reply • No obligation</span>
+</div>
+
+    <p class="contact-note">We usually reply within 24–48 hours.</p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="copyright-main">
+      © <a
+        href="mailto:bram.schoonjans@gmail.com?subject=Regarding%20kulekulezanskar.com"
+        aria-label="Email Bram Schoonjans"
+      >Bram Schoonjans</a> — All rights reserved
+    </p>
+
+    <p class="copyright-sub">
+      All text, route data (GPX) and photography are © Bram Schoonjans.
+      Any reuse without written permission is prohibited.
+    </p>
+    
+     <p class="copyright-sub">
+      <strong>Disclaimer:</strong>
+      The information on this website is provided for general guidance only.
+      No rights can be derived from the content of this website.
+    </p>
+    
+  </div>
+</footer>
+<!-- Sticky WhatsApp button (mobile) -->
+<div class="wa-sticky" aria-label="Sticky WhatsApp contact">
+  <a
+    href="https://wa.me/919484362470?text=Hello%20Stanzin%2C%20I%20am%20interested%20in%20the%20Kule%20Kule%20Zanskar%20six-day%20trek."
+    target="_blank"
+    rel="noopener noreferrer">
+    WhatsApp <span style="opacity:.82;font-weight:600">Message us</span>
+  </a>
+</div>
+<script>
+(function () {
+  const details = document.getElementById('mobile-menu');
+  if (!details) return;
+
+  const summary = details.querySelector('summary');
+
+  // Smooth + reliable jump (iOS-friendly)
+  function goToHash(hash) {
+    const id = hash.slice(1);
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    // Close menu first
+    details.open = false;
+    summary.blur();
+
+    // Let the DOM settle, then scroll
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Keep URL updated (optional but nice)
+        history.replaceState(null, '', hash);
+      });
+    });
+  }
+
+  // Intercept taps on menu links
+  details.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href^="#"]');
+    if (!link) return;
+
+    e.preventDefault(); // prevent Safari's flaky default anchor behavior
+    goToHash(link.getAttribute('href'));
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!details.open) return;
+    if (details.contains(e.target)) return;
+    details.open = false;
+    summary.blur();
+  });
+
+  // If someone loads the page with a hash, ensure correct position after load
+  window.addEventListener('load', () => {
+    if (location.hash) {
+      // small delay for fonts/images/sticky header
+      setTimeout(() => goToHash(location.hash), 50);
+    }
+  });
+})();
+</script>
+</body>
+</html>
